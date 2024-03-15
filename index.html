@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container col-md-6">
+      <h1 class="text-center">Cars</h1>
+      <form id="form">
+        <div class="form-group">
+          <label for="exampleInputText1">Car name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputText1"
+            aria-describedby="emailHelp"
+            placeholder="Write any...."
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputText2">Types of Car Bodies</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputText2"
+            placeholder="Write any...."
+            list="date"
+            required
+          />
+          <datalist id="date">
+            <option value="sedan"></option>
+            <option value="hatchback"></option>
+            <option value="coupe"></option>
+            <option value="suv"></option>
+            <option value="sport car"></option>
+          </datalist>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div class="btn-group mt-4">
+        <button href="#" class="btn btn-primary">All</button>
+        <button href="#" class="btn btn-primary">sedan</button>
+        <button href="#" class="btn btn-primary">hatchback</button>
+        <button href="#" class="btn btn-primary">coupe</button>
+        <button href="#" class="btn btn-primary">suv</button>
+        <button href="#" class="btn btn-primary">sport car</button>
+      </div>
+      <ul class="list-group mt-3" id="list"></ul>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
